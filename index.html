@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!-- swiper.css cdn으로 연결 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    <!-- 사용자 정의 css연결 -->
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <!-- 파비콘 넣기 -->
+    <link rel="shortcut icon" href="img/img/farvicon.png">
+    <!-- 제이쿼리 라이브러리 연결 -->
+    <script src="js/code.jquery.com_jquery-3.7.1.js"></script>
+    <!-- swiper.js cdn으로 연결 -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- gsap 플러그인 연결 -->
+    <script src="js/gsap.min.js"></script>
+    <!-- 사용자 정의 js연결 -->
+    <script src="js/main.js"></script>
+    <title>오설록</title>
+</head>
+<body>
+    <div class="wrap">
+        <header>
+           <div class="center">
+             <!-- 로고 -->
+             <div class="logo">
+                <a href="index.html"><img src="img/img/oshulok.png" alt=""></a>
+                </div>
+                
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">제품</a>
+                        <ul class="sub">
+                            <li><a href="#">베스트</a>
+                            <li><a href="#">위클리 베스트</a></li>
+                            <li><a href="#">베스트</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">티제품</a>
+                        <ul class="sub">
+                            <li><a href="#">티세트</a></li>
+                            <li><a href="#">명차</a></li>
+                            <li><a href="#">녹차/말차</a></li>
+                            <li><a href="#">발효차/홍차</a></li>
+                            <li><a href="#">블렌디드티</a></li>
+                            <li><a href="#">허브티</a></li>
+                            <li><a href="#">밀크티/아이스티</a></li>
+                            <li><a href="#">콤부차</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">티푸드</a>
+                        <ul class="sub">
+                            <li><a href="#">과자/초콜릿</a></li>
+                            <li><a href="#">베이커리</a></li>
+                            <li><a href="#">아이스크림</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">티웨어</a>
+                        <ul class="sub">
+                            <li><a href="#">용도별</a></li>
+                            <li><a href="#">브랜드별</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">라이프스타일</a>
+                        <ul class="sub">
+                            <li><a href="#">스킨케어</a></li>
+                            <li><a href="#">단체 및 기업 구매</a></li>
+                        </ul>
+                    </li>
+                 
+                    <li>
+                        <a href="#">라이프스타일</a>
+                        <ul class="sub">
+                            <li><a href="#">선물추천</a></li>
+                            <li><a href="#">다다일상</a></li>
+                            <li><a href="#">브랜드</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="top_menu">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <svg height="100%" viewBox="0 0 48 48" width="100%" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 0h48v48H0z" fill="none"/>
+                                <path class="lang" d="M23.99 4C12.94 4 4 12.95 4 24s8.94 20 19.99 20C35.04 44 44 35.05 44 24S35.04 4 23.99 4zm13.85 12h-5.9c-.65-2.5-1.56-4.9-2.76-7.12 3.68 1.26 6.74 3.81 8.66 7.12zM24 8.07c1.67 2.4 2.97 5.07 3.82 7.93h-7.64c.85-2.86 2.15-5.53 3.82-7.93zM8.52 28C8.19 26.72 8 25.38 8 24s.19-2.72.52-4h6.75c-.16 1.31-.27 2.64-.27 4 0 1.36.11 2.69.28 4H8.52zm1.63 4h5.9c.65 2.5 1.56 4.9 2.76 7.13-3.68-1.26-6.74-3.82-8.66-7.13zm5.9-16h-5.9c1.92-3.31 4.98-5.87 8.66-7.13-1.2 2.23-2.11 4.63-2.76 7.13zM24 39.93c-1.66-2.4-2.96-5.07-3.82-7.93h7.64c-.86 2.86-2.16 5.53-3.82 7.93zM28.68 28h-9.36c-.19-1.31-.32-2.64-.32-4 0-1.36.13-2.69.32-4h9.36c.19 1.31.32 2.64.32 4 0 1.36-.13 2.69-.32 4zm.51 11.12c1.2-2.23 2.11-4.62 2.76-7.12h5.9c-1.93 3.31-4.99 5.86-8.66 7.12zM32.72 28c.16-1.31.28-2.64.28-4 0-1.36-.11-2.69-.28-4h6.75c.33 1.28.53 2.62.53 4s-.19 2.72-.53 4h-6.75z"/></svg>
+                        </a>
+                    </li>
+                    <li><a href="#" class="menu_btn" >
+                        <svg fill="none" height="100%" viewBox="0 0 48 48" width="100%" xmlns="http://www.w3.org/2000/svg"><rect fill="white" fill-opacity="0.01" height="48" width="48"/><path d="M7.94977 11.9498H39.9498" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/><path d="M7.94977 23.9498H39.9498" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/><path d="M7.94977 35.9498H39.9498" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/></svg>
+</svg>
+                    </a></li>
+                </ul>
+            </div>
+        </div> 
+        <!-- 서브메뉴 배경 -->
+    <div class="sub_bg"></div>
+    </header>
+    
+<section class="sec1">
+<!-- 메인 슬라이드 swiper plugin -->
+<!-- Slider main container -->
+<div class="swiper main">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+            <div class="swiper-slide s1">
+                <h1>부담없는 선물</h1>
+                <p>감사한 마음을 표현하고 싶을 떄 부담 없이 선물해요!</p>
+            </div>
+            <div class="swiper-slide s2">
+                <h1>녹차 밀크 스프레드</h1>
+                <p>최고급 제주 녹차의 깊은 풍미로 다양하게 즐겨요!</p>
+            </div>
+                <div class="swiper-slide s3">
+                    <h1>시크릿 티 스토리</h1>
+                    <p>신비로운 섬 제주의 다채로운 향기와 이야기!</p>
+                </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+    
+        </section>
+        <section class="sec2 scrollSet">
+            <div class="center">
+                <div class="month time ani firstAni">
+                    <h2>9월 출석체크</h2>
+                    <p>09.01~09.30</p>
+                    <button type="button"><a href="#">
+                        자세히 보기</a></button>
+                </div>
+                <div class="story ani secondAni">
+                    <h2>Tea From Jeju</h2>
+                    <p>오설록 스토리</p>
+                    <button type="button"><a href="#">
+                    자세히 보기</a></button>
+                </div>
+            </div>
+        </section>
+        <section class="sec3 scrollSet">
+            <div class="center">
+                <div class="content ani">
+                <h2>오늘은 어떤 차를 마셔볼까요?<br><br></h2>
+                <p>오설록에서 많이 선물된 선물세트를 
+                    <br>모았어요</p>
+                <button type="button"><a href="#">자세히보기</a>
+                </button>
+            </div>
+            <!-- swiperslide -->
+            <div class="swiper exhibit ani secondAni">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="image img1"></div>
+                        <br>
+                        <h3>러블리 티 박스</h3>
+                        <p>21,000원</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="image img2"></div>
+                        <br>
+                        <h3>시크릿 티 스토리</h3>
+                        <p>37,600원</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="image img3"></div>
+                        <br>
+                        <h3>프리미엄 티 컬렉션 90입</h3>
+                        <p>52,500원</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="image img4"></div>
+                        <br>
+                        <h3>스페셜 티 에디션</h3>
+                        <p>71,250원</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="image img5"></div>
+                        <br>
+                        <h3>푸르티 블린디드 티백 박스</h3>
+                        <p>29,500원</p>
+                    </div>
+                <!-- swiper wrapper -->
+                </div>
+                
+                <!-- pagination progress -->
+                <div class="swiper-pagination"></div>
+                <!-- swiper -->
+                
+            </div>
+            <!-- prev버튼, next버튼 -->
+            <div class="swiper-button-next"></div><div class="swiper-button-next ani"></div>
+            <div class="swiper-button-prev"></div><div class="swiper-button-prev ani"></div>
+        </div>
+        </section>
+        <section class="sec4 scrollSet">
+            <div class="center">
+                <div class="content ani firstAni">
+                <h2>매장소개<br><br></h2>
+                <p>오프라인 매장에서 다채로운<br><br> 오설록을 경험하세요</p>
+                <button type="button"><a href="#">자세히보기</a>
+                </button>
+            </div>
+            <!-- swiperslide -->
+            <div class="swiper notice ani secondAni">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="image img1"></div>
+                            <h3>오설록<br>
+                                티 하우스 해운대점</h3>
+                            <p>일상에서 벗어나 차의 본질에 집<br>
+                                중하며 온전한 휴식을 완성하는 <br>
+                                공간</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="image img2"></div>
+                            <h3>오설록<br>
+                                티하우스 한남점</h3>
+                            <p>오설록과 페이스갤러리의 협업<br>
+                                으로 탄생한 예술과 차 애호가를<br>
+                                위한 차문화 복합 공간</h3></p>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="image img3"></div>
+                            <h3>오설록<br>
+                                티하우스 북촌점</h3>
+                            <p>차를 통해 새로운 감각과 취향을<br>
+                                보여주는 가치변화의 공간</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="image img4"></div>
+                            <h3>오설록<br>
+                                티하우스 용산파크점</h3>
+                            <p>캐주얼하면서도 차에 대한 전문<br>
+                                성을 담은 세련된 공간</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="image img5"></div>
+                            <h3>오설록 1979</h3>
+                            <p>브랜드의 격을 한 단계 끌어올린<br>
+                                오설록의 프리미엄 티룸</p>
+                        </div>
+                    <!-- swiper wrapper -->
+                    </div>
+                    <!-- swiper-wrapper end -->
+                    <!-- pagination progress -->
+                    <div class="swiper-pagination"></div>
+                </div>
+                    <!-- prev버튼, next버튼 -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+                <!-- swiper -->
+            </div>
+        </div>
+        </section>
+        <section class="sec5 scrollSet">
+            <div class="center">
+                <div class="content ani firstAni">
+                    <h2>2023년 사용자 통계</h2>
+                    <!-- <p>2023년도 오설록 고객만족도 조사 결과 보고서 입니다</p> -->
+                    <div class="graph">
+                        <img src="img/Vector-big.png" alt="big">
+                    </div>
+                </div>
+                <div class="statis ani secondAni"
+                id="count-area">
+                    <ul>
+                        <li>
+                            <img src="img/Vector-small.png" alt="small">
+                            <p>앱 서비스 만족도 조사</p>
+                            <div class="count">
+                                <span class="num" id="count-item1">1220</span>
+                                <b>명</b>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="img/Vector-small.png" alt="small">
+                            <p>앱 서비스 사용자 통계</p>
+                            <div class="count">
+                                <span class="num" id="count-item2">2480</span>
+                                <b>명</b>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="img/Vector-small.png" alt="small">
+                            <p>홈페이지 방문자 통계</p>
+                            <div class="count">
+                                <span class="num" id="count-item3">8312</span>
+                                <b>명</b>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+        <section class="sec6 scrollSet">
+            <div class="center">
+                <div class="content ani fristAni">
+                    <h1>티웨어</h1>
+                    <p>다채로운 오설록의 차를<br>
+                        즐길 수 있는 다양한<br>
+                        Tea ware를 소개합니다.</p>
+                        <button type="button">
+                            <a href="#">자세히 보기</a>
+                        </button>           
+                </div>          <!--content-->
+                <div class="online">
+                    <ul>
+                        <li class="on1 ani ani1"><a href="#"></a></li>
+                        <li class="on2 ani ani2"><a href="#"></a></li>
+                        <li class="on3 ani ani3"><a href="#"></a></li>
+                        <li class="on4 ani ani4"><a href="#"></a></li>
+                        <li class="on5 ani ani5"><a href="#"></a></li>
+                        <li class="on6 ani ani6"><a href="#"></a></li>
+                        <li class="on7 ani ani7"><a href="#"></a></li>
+                        <li class="on8 ani ani8"><a href="#"></a></li>
+                        <li class="on9 ani ani9"><a href="#"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    <footer>
+        <div class="center">
+            <div class="footer1">
+                <div class="f_logo">
+                    <img src="img/img/oshulok.png" alt="">
+                </div>
+                <div class="info">
+                    <ul>
+                        <li><a href="#">회사소개 |</a></li>
+                        <li><a href="#">| 서비스 이용약관 |</a></li>
+                        <li><a href="#">| 개인정보 처리방침 |</a></li>
+                        <li><a href="#">| 영상정보 처리방침 |</a></li>
+                        <li><a href="#">| 임직원 할인 |</a></li>
+                        <li><a href="#">| 사이트맵 |</a></li>
+                        <li><a href="#">| 전자공고</a></li>
+                    </ul>
+                </div>
+                <address>
+                    주소 : 서울특별시 용산구 한강대로 100,14층(한강로2가)<br>
+                    사업자등록번호: 390-87-01499<br>
+                    대표전화 : 080-805-5555
+                </address>
+                <p>&copy;National Museum of Korea.</p>
+            </div> <!--footer1-->
+            <div class="footer2">
+                <div class="family_site">
+                    <a href="#">Family Site</a>
+                    <div class="family_list">
+                        <ul>
+                            <li><a href="#">어린이 박물관</a></li>
+                            <li><a href="#">교육플랫폼 모두</a></li>
+                            <li><a href="#">학예사 자격증</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sns">
+                    <ul>
+                        <li><a href="#">
+                            <img src="img/img/9034940_logo_tiktok_icon (1).png" alt="">
+                        </a></li>
+                        <li><a href="#">
+                            <img src="img/img/4691240_instagram_icon.png" alt="">
+                        </a></li>
+                        <li><a href="#">
+                            <img src="img/img/211928_social_youtube_icon (1).png" alt="">
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </div>
+    <!-- top button -->
+    <div class="top"><a href="#">
+        <img src="TOP버튼.png" alt="">
+    </a></div>
+    <script>
+        // sec5 영역의 count animation
+            //sec5영역의 count animation
+        // 카운팅 애니메이션 함수
+    function count(element, start, end, duration) {
+        let current = start;
+        const range = end - start;
+        const increment = range / (duration / 10);
+        const stepTime = 50; // 10ms 마다 증가하도록 설정
+
+        let timer = setInterval(function() {
+            current += increment;
+            if (current >= end) {
+                clearInterval(timer);
+                current = end;
+            }
+            element.textContent = formatNumber(current, end);
+        }, stepTime);
+    }
+
+    function formatNumber(number, end) {
+        if (Number.isInteger(end)) {
+            return number.toFixed(0).replace(/(\d)(?=(\d{3})+$)/g, '$1,');
+        } else {
+            return number.toFixed(1);
+        }
+    }
+
+    // 스크롤 이벤트 리스너
+    window.addEventListener('scroll', function() {
+        const countArea = document.getElementById('count-area');
+        const countAreaPosition = countArea.getBoundingClientRect().top;
+        const screenPosition = window.innerHeight;
+
+        if (countAreaPosition < screenPosition / 2) { // 요소가 반이상 보였을 때 실행
+
+            const count1 = document.getElementById('count-item1');
+            count(count1, 0, 1220, 300);
+
+            const count2 = document.getElementById('count-item2');
+            count(count2, 0, 2480, 300);
+
+            const count3 = document.getElementById('count-item3');
+            count(count3, 0, 8312, 300);
+
+            const count4 = document.getElementById('count-item4');
+            count(count4, 0, 168, 300);
+
+            // 이벤트 리스너 삭제
+            window.removeEventListener('scroll', arguments.callee);
+        }
+    });
+    </script>
+    
+</body>
+</html>
